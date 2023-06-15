@@ -1,20 +1,62 @@
+# alx-low_level_programming
 
+This repository contains solutions for various low-level programming tasks.
 
-This command compiles the C file `filename.c` and generates an executable named `output`.
+## Tasks
 
-## Default Program Name
+### Task 0: Preprocessor
 
-When compiling with gcc, the default program name is `a.out` if you don't specify an output file name using the `-o` option.
+**Description:**
+Write a script that runs a C file through the preprocessor and saves the result into another file.
 
-## Official C Coding Style and Betty
+**Instructions:**
+1. Set the C file name in the `$CFILE` variable.
+2. Run the script `0-preprocessor`.
+3. The output will be saved in the file `c`.
 
-The official C coding style is defined in the "C Programming Language" book by Brian Kernighan and Dennis Ritchie. To check your code against the official C coding style, you can use `betty-style`, a tool that analyzes your code for style compliance.
+### Task 1: Compiler
 
-## Including Standard Library Headers
+**Description:**
+Write a script that compiles a C file but does not link.
 
-To use standard library functions in your source code, you need to include the appropriate header file that declares those functions. For example, to use `printf`, you need to include the `<stdio.h>` header.
+**Instructions:**
+1. Set the C file name in the `$CFILE` variable.
+2. Run the script `1-compiler`.
+3. The output file will be named the same as the C file, but with the extension `.o` instead of `.c`.
 
-## Main Function and Program Return Value
+### Task 2: Assembler
 
-The `main` function in C serves as the entry point of a program and influences the return value. By convention, a return value of 0 indicates successful program execution, while a non-zero value indicates an error or abnormal termination.
+**Description:**
+Write a script that generates the assembly code of a C code and saves it in an output file.
 
+**Instructions:**
+1. Set the C file name in the `$CFILE` variable.
+2. Run the script `2-assembler`.
+3. The output file will be named the same as the C file, but with the extension `.s` instead of `.c`.
+
+### Task 3: Name
+
+**Description:**
+Write a script that compiles a C file and creates an executable named `cisfun`.
+
+**Instructions:**
+1. Set the C file name in the `$CFILE` variable.
+2. Run the script `3-name`.
+3. The executable file `cisfun` will be created.
+
+## Repository
+
+GitHub repository: [alx-low_level_programming](https://github.com/youssef2525/alx-low_level_programming)
+
+## Directory: 0x00-hello_world
+
+**Files:**
+- 0-preprocessor
+- 1-compiler
+- 2-assembler
+- 3-name
+- main.c
+- main.s
+- main.o
+- c
+- Makefile
