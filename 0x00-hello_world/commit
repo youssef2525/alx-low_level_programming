@@ -4,7 +4,7 @@
 add_commit_push() {
     git add "$1"
     git commit -m "$2"
-    git push origin master
+    git push 
 }
 
 # Add and commit each file with a description
