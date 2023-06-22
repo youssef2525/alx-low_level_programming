@@ -1,0 +1,30 @@
+#!/bin/bash
+
+source_path="C:\Users\Youssef Bentaleb\Desktop\Study\Formations\ALX\alx-low_level_programming-master\0x04-more_functions_nested_loops"
+destination_path="C:\Users\Youssef Bentaleb\alx-low_level_programming\0x04-more_functions_nested_loops"
+commit_description="Committing file"
+
+# Create the destination directory if it doesn't exist
+mkdir -p "$destination_path"
+
+# Move to the destination path
+cd "$destination_path"
+
+# Iterate over each file in the source path
+for file in "$source_path"/*; do
+    # Get the file name without the path
+    filename=$(basename "$file")
+    
+    # Copy the file to the destination path
+    cp "$file" .
+    
+    # Add the file to Git
+    git add "$filename"
+    
+    # Commit the changes with the corresponding description
+    git commit -m "$commit_description: $filename"
+    
+    # Push the commit to the remote repository
+    git push origin 
+done
+
