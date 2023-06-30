@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _strncat - Concatenate two strings using at most n bytes from src
  * @newDest: The destination string
